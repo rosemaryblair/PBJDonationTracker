@@ -5,4 +5,9 @@
     <string name="register">Register</string>
     <string name="title_activity_login">LoginActivity</string>
     <string name="title_activity_app_screen">AppScreen</string>
+    <string name="password">Enter password</string>
+    <string name="enterUsername">Enter username</string>
+    <string name="usernameLabel">Username</string>
+    <string name="cancel">Cancel</string>
+    <string name="passwordLabel">Password</string>
 </resources>
