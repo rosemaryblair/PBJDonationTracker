@@ -1,7 +1,12 @@
 <resources>
     <string name="app_name">PBJDonationTracker</string>
     <string name="welcome">Welcome</string>
-    <string name="login">Login</string>
+    <string name="login">Log In</string>
     <string name="register">Register</string>
     <string name="title_activity_login">LoginActivity</string>
+    <string name="password">Enter password</string>
+    <string name="enterUsername">Enter username</string>
+    <string name="username">Username</string>
+    <string name="cancel">Cancel</string>
+    <string name="passwordLabel">Password</string>
 </resources>
