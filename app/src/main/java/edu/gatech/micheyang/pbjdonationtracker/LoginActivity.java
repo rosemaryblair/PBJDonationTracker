@@ -36,8 +36,10 @@ public class LoginActivity extends AppCompatActivity {
 
     public void onLoginButtonPressed(View view) {
         Log.d("Edit", "Logged In");
-        //Add Username and Password checking here
-
+        /**Add Username and Password checking here
+         * If the login is invalid, show some text saying that the username or password is invalid
+         * If the login is correct, include the two lines below to go to the main app screen
+         */
         Intent intent = new Intent(LoginActivity.this, AppScreen.class);
         startActivity(intent);
     }
