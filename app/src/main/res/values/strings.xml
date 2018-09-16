@@ -10,4 +10,5 @@
     <string name="usernameLabel">Username</string>
     <string name="cancel">Cancel</string>
     <string name="passwordLabel">Password</string>
+    <string name="logout">Log Out</string>
 </resources>
