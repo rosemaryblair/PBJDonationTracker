@@ -34,4 +34,12 @@ public class LoginActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void onLoginButtonPressed(View view) {
+        Log.d("Edit", "Logged In");
+        //Add Username and Password checking here
+
+        Intent intent = new Intent(LoginActivity.this, AppScreen.class);
+        startActivity(intent);
+    }
+
 }
