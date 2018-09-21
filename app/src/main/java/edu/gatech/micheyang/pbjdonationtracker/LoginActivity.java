@@ -8,8 +8,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
+import android.widget.EditText;
 
 public class LoginActivity extends AppCompatActivity {
+
+    EditText userUsername = (EditText)findViewById(R.id.enterLoginUsername);
+    EditText userPassword = (EditText)findViewById(R.id.enterLoginPassword);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,9 +43,16 @@ public class LoginActivity extends AppCompatActivity {
         /**Add Username and Password checking here
          * If the login is invalid, show some text saying that the username or password is invalid
          * If the login is correct, include the two lines below to go to the main app screen
-         */
+         **/
         Intent intent = new Intent(LoginActivity.this, AppScreen.class);
         startActivity(intent);
     }
 
+    private boolean isUsernameValid() {
+        return (userUsername.getText().toString().equals("user"));
+    }
+
+    private boolean isPassWordCorrect() {
+        return(userPassword.getText().toString().equals("pass"));
+    }
 }
