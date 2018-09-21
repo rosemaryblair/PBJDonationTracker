@@ -42,10 +42,27 @@ public class LoginActivity extends AppCompatActivity {
         Log.d("Edit", "Logged In");
         /**Add Username and Password checking here
          * If the login is invalid, show some text saying that the username or password is invalid
+         */
+        if (isUsernameValid() && isPassWordCorrect()) {
+        /**
+         * Comment left from Michelley, Katie, & Sabrina
          * If the login is correct, include the two lines below to go to the main app screen
-         **/
+         */
         Intent intent = new Intent(LoginActivity.this, AppScreen.class);
         startActivity(intent);
+        } else {
+            if (userUsername.getText().toString().trim().equalsIgnoreCase("")) {
+                userUsername.setError("This field cannot be left blank");
+            } else if (!isUsernameValid()) {
+                userUsername.setError("Email is incorrect");
+            }
+
+            if (userPassword.getText().toString().trim().equalsIgnoreCase("")) {
+                userPassword.setError("This field cannot be left blank");
+            } else if (!isPassWordCorrect()) {
+                userUsername.setError("Password is incorrect");
+            }
+        }
     }
 
     private boolean isUsernameValid() {
